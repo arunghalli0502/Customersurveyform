@@ -20,6 +20,11 @@
             <p class="psuggested"></p>
             <p class="prating"></p>
             <p class="psuggestion"></p>
+            <p class="Proffesion"></p>
+            <p class="email"></p>
+            <p class="mobile"></p>
+            <p class="dob"></p>
+            <p class="gender"></p>
         </div>
         <section class="surveyform">
             <form id="surveyform" onsubmit="return submitsurveydata()">
@@ -36,6 +41,42 @@
                     <input type="radio" value="yes" name="firsttime" id="firsttime">Yes</input>
                     <input type="radio" value="no" name="firsttime" id="firsttime">No</input>
                 </span>
+
+                
+                             <div class="name">
+                    <span>
+                        <label for="Proffesion">Proffesion</label> <br> <input type="text" name="Proffesion" id="Proffesion">
+                    </span>
+                    <span class="lname">
+                        <label for="email">Email</label> <br> <input type="email" name="email" id="email">
+                    </span>
+                </div>
+                <div class="name">
+                    <span>
+                        <label for="mobile">Mobile</label> <br> <input type="number" name="mobile" id="mobile">
+                    </span>
+                    <span class="lname">
+                        <label for="dob">DOB</label> <br> <input type="date" name="dob" id="dob" max="10" min="10">
+                    </span>
+                </div>
+                
+                <div class="name">
+                    <span>
+                        <label for="country">Country</label> <br>
+                        <select name="country" id="country">
+                            <option value="+91">India</option>
+                            <option value="+10">USA</option>
+                            <option value="+30">Japan</option>
+                            <option value="+25">Russia</option>
+                          </select>
+                    </span>
+                </div>
+                <p>Gender </p>
+                <span class="options">
+                    <input type="radio" value="male" name="gender" id="gender">Male</input>
+                    <input type="radio" value="female" name="gender" id="gender">Female</input>
+                </span>
+                
 
                 <p>Would you suggestion to your friend and colleague?</p>
                 <span class="options">
