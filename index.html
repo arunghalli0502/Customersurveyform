@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="SurveyForm.css">
+</head>
+
+<body>
+    <span>
+        <h1>Customer Survey Form</h1> 
+        <div class="datadisppopup" id="datadisppopup">
+            <span class="closepopupicon" onclick="closepopup()">&#215</span>
+            <p id="popupheading">Thank you for taking the survey. Please find your response saved</p>
+            <p class="pfname"></p>
+            <p class="plname"></p>
+            <p class="pfirsttime"></p>
+            <p class="psuggested"></p>
+            <p class="prating"></p>
+            <p class="psuggestion"></p>
+        </div>
+        <section class="surveyform">
+            <form id="surveyform" onsubmit="return submitsurveydata()">
+                <div class="name">
+                    <span>
+                        <label for="fname">First Name</label> <br> <input type="text" name="fname" id="fname">
+                    </span>
+                    <span class="lname">
+                        <label for="fname">Last Name</label> <br> <input type="text" name="lname" id="lname">
+                    </span>
+                </div>
+                <p>Is this the first time your are using our product and service? </p>
+                <span class="options">
+                    <input type="radio" value="yes" name="firsttime" id="firsttime">Yes</input>
+                    <input type="radio" value="no" name="firsttime" id="firsttime">No</input>
+                </span>
+
+                <p>Would you suggestion to your friend and colleague?</p>
+                <span class="options">
+                    <input type="radio" value="yes" name="suggested" id="suggested">Yes</input>
+                    <input type="radio" value="no" name="suggested" id="suggested">No</input>
+                </span>
+
+                <p>How satisfied are you with our comapny overall? </p>
+                <span class="options">
+                    <input type="radio" value="Satisfied" name="rating" id="rating">Satisfied</input>
+                    <input type="radio" value="Undecided" name="rating" id="rating">Undecided</input>
+                    <input type="radio" value="Unsatisfied" name="rating" id="rating">Unsatisfied</input>
+                </span>
+
+                <p>Do you have any suggestion to improve our service? </p>
+                <textarea name="suggestion" id="suggestions" cols="55" rows="7"></textarea>
+                <br>
+                <p id="errormessage"></p>
+                <input type="submit">
+                
+            </form>
+        </section> 
+    </span>
+    <script src="./Surveyform.js"></script>
+</body>
+
+</html>
