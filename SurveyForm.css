@@ -11,9 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: royalblue;
-    width: 100vw;
-    height: 100vh;
-
+    margin-bottom: 70px;
 }
 
 .surveyform
@@ -121,4 +119,9 @@ h1
 #popupheading
 {
     margin-top: 50px;
+}
+#country
+{
+    width: 175px;
+    height: 30px;
 }
